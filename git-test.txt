@@ -1,1 +1,3 @@
 Getting Git is legit.
+
+I am adding another line to this text.
