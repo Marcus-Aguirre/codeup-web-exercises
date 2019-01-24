@@ -2,9 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Register With Us</title>
 </head>
 <body>
-
+    <header>
+        <h1>Veridian Dynamics</h1>
+        <hr>
+    </header>
+    <main>
+        <h3>Register With Us <em>Today!</em></h3>
+        <form method="POST" action="https://request-inspector.glitch.me/">
+            <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="YourEmail@Here">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" placeholder="YourPassword123">
+            </div>
+            <h3>Short Biography</h3>
+                <div>
+                <textarea rows="10" cols="60" name="bio" placeholder="Please type a short description about yourself."></textarea>
+                </div>
+            <br>
+            <fieldset>
+                <legend><strong>How did you hear about us?</strong></legend>
+                <label for="billboard">
+                    Billboard
+                    <input id="billboard" type="radio" name="discovery_method" value="billboard">
+                </label>
+                <label for="radio_ad">
+                    Radio Advertisement
+                    <input id="radio_ad" type="radio" name="discovery_method" value="radio_ad">
+                </label>
+                <label for="internet">
+                    Internet advertisement
+                    <input id="internet" type="radio" name="discovery_method" value="internet">
+                </label>
+                <label for="other">
+                    Other
+                    <input id="other" type="radio" name="discovery_method" value="other">
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><strong>What type of web browser do you use?</strong></legend>
+                <select name="web_browser">
+                    <option value="chrome">Google Chrome</option>
+                    <option value="safari">Safari</option>
+                    <option value="firefox">Mozilla Firefox</option>
+                    <option value="internet_explorer">Internet Explorer</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+            <br>
+            <button>Submit your information.</button>
+        </form>
 </body>
 </html>
