@@ -2,9 +2,125 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Pizza Tent Order</title>
 </head>
 <body>
+    <header>
+        <h1><u>Pizza Huth™</u></h1>
+        <p>An amazing pizza company that has nothing to do with any other famous pizza chains.</p>
+    </header>
+    <main>
+        <form method="POST" action="https://request-inspector.glitch.me/">
+            <fieldset>
+                <legend><h2>Who Are You?</h2></legend>
+                <label for="username">
+                    Username
+                    <input id="username" type="text" name="username" placeholder="Username">
+                </label><br>
+                <label for="password">
+                    Password
+                    <input id="password" type="password" name="password" placeholder="Password">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend><h2>Size</h2></legend>
+                <div>
+                    <label for="small">
+                        <input id="small" type="radio" name="size" value="small">
+                            Small (10 inch.)
+                    </label>
+                </div>
+                <div>
+                    <label for="medium">
+                        <input id="medium" type="radio" name="size" value="medium">
+                            Medium (12 inch.)
+                    </label>
+                </div>
+                <div>
+                    <label for="large">
+                        <input id="large" type="radio" name="size" value="large">
+                        Large (14 inch.)
+                    </label>
+                </div>
+                <div>
+                    <label for="humongo">
+                        <input id="humongo" type="radio" name="size" value="humongo">
+                            Humongo (36 inch.)
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend><h2>Crust</h2></legend>
+                <div>
+                    <label for="hand_tossed">
+                        <input id="hand_tossed" type="radio" name="crust" value="hand_tossed">
+                            Hand Tossed
+                    </label>
+                </div>
+                <div>
+                    <label for="pan">
+                        <input id="pan" type="radio" name="crust" value="pan">
+                            Deep Dish
+                    </label>
+                </div>
+                <div>
+                    <label for="thin">
+                        <input id="thin" type="radio" name="crust" value="thin">
+                            Thin Crust
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend><h2>Sauce</h2></legend>
+                <select name="pizza_sauce">
+                    <option value="marinara">Marinara Sauce</option>
+                    <option value="alfredo">Alfredo Sauce</option>
+                    <option value="traditional">Traditional Pizza Sauce</option>
+                    <option value="trio">Mixture of All 3</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend><h2>Toppings - Select all that apply</h2></legend>
+                <label for="mushroom">
+                    <input id="mushroom" type="checkbox" name="topping" value="mushroom">
+                        Mushroom
+                </label><br>
+                <label for="black_olive">
+                    <input id="black_olive" type="checkbox" name="topping" value="olive">
+                        Black Olive
+                </label><br>
+                <label for="pineapple">
+                    <input id="pineapple" type="checkbox" name="topping" value="pineapple">
+                        Pineapple
+                </label><br>
+                <label for="pepperoni">
+                    <input id="pepperoni" type="checkbox" name="topping" value="pepperoni">
+                        Pepperoni
+                </label><br>
+                <label for="ham">
+                    <input id="ham" type="checkbox" name="topping" value="ham">
+                        Ham
+                </label><br>
+                <label for="beef">
+                    <input id="beef" type="checkbox" name="topping" value="beef">
+                        Beef
+                </label><br>
+                <label for="anchovies">
+                    <input id="anchovies" type="checkbox" name="topping" value="anchovies">
+                        Anchovies
+                </label><br>
+                <label for="none">
+                    <input id="none" type="checkbox" name="topping" value="none">
+                        No Toppings
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend><h2>Additional Comments</h2></legend>
+                <textarea rows="7" cols="60" name="comments" placeholder="Any additional comments here"></textarea>
+            </fieldset>
+            <button>Place Your Delicious Order</button>
+        </form>
+    </main>
 
 </body>
 </html>
