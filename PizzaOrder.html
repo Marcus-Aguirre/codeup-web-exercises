@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Pizza Tent Order</title>
+    <link rel="stylesheet" href="css/pizza.css">
 </head>
 <body>
     <header>
-        <h1><u>Pizza Huth™</u></h1>
-        <p>An amazing pizza company that has nothing to do with any other famous pizza chains.</p>
+        <h1 id="header"><u>Pizza Huth™</u></h1>
+        <img src="img/pizzahuth.png" height="120" alt="pizza">
+        <p id="company_info">An amazing pizza company that has nothing to do with any other famous pizza chains.</p>
     </header>
     <main>
         <form method="POST" action="https://request-inspector.glitch.me/">
-            <fieldset>
+            <fieldset id="selection_1">
                 <legend><h2>Who Are You?</h2></legend>
                 <label for="username">
                     Username
@@ -22,7 +24,7 @@
                     <input id="password" type="password" name="password" placeholder="Password">
                 </label>
             </fieldset>
-            <fieldset>
+            <fieldset id="selection_2">
                 <legend><h2>Size</h2></legend>
                 <div>
                     <label for="small">
@@ -49,7 +51,7 @@
                     </label>
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset id="selection_3">
                 <legend><h2>Crust</h2></legend>
                 <div>
                     <label for="hand_tossed">
@@ -70,7 +72,7 @@
                     </label>
                 </div>
             </fieldset>
-            <fieldset>
+            <fieldset id="selection_4">
                 <legend><h2>Sauce</h2></legend>
                 <select name="pizza_sauce">
                     <option value="marinara">Marinara Sauce</option>
@@ -79,48 +81,51 @@
                     <option value="trio">Mixture of All 3</option>
                 </select>
             </fieldset>
-            <fieldset>
-                <legend><h2>Toppings - Select all that apply</h2></legend>
-                <label for="mushroom">
-                    <input id="mushroom" type="checkbox" name="topping" value="mushroom">
-                        Mushroom
-                </label><br>
-                <label for="black_olive">
-                    <input id="black_olive" type="checkbox" name="topping" value="olive">
-                        Black Olive
-                </label><br>
-                <label for="pineapple">
-                    <input id="pineapple" type="checkbox" name="topping" value="pineapple">
-                        Pineapple
-                </label><br>
-                <label for="pepperoni">
-                    <input id="pepperoni" type="checkbox" name="topping" value="pepperoni">
-                        Pepperoni
-                </label><br>
-                <label for="ham">
-                    <input id="ham" type="checkbox" name="topping" value="ham">
-                        Ham
-                </label><br>
-                <label for="beef">
-                    <input id="beef" type="checkbox" name="topping" value="beef">
-                        Beef
-                </label><br>
-                <label for="anchovies">
-                    <input id="anchovies" type="checkbox" name="topping" value="anchovies">
-                        Anchovies
-                </label><br>
-                <label for="none">
-                    <input id="none" type="checkbox" name="topping" value="none">
-                        No Toppings
-                </label>
+            <fieldset id="selection_5">
+                    <legend><h2>Toppings</h2></legend>
+                    <p>Select all that apply</p>
+                    <label for="mushroom">
+                        <input id="mushroom" type="checkbox" name="topping" value="mushroom">
+                            Mushroom
+                    </label><br>
+                    <label for="black_olive">
+                        <input id="black_olive" type="checkbox" name="topping" value="olive">
+                            Black Olive
+                    </label><br>
+                    <label for="pineapple">
+                        <input id="pineapple" type="checkbox" name="topping" value="pineapple">
+                            Pineapple
+                    </label><br>
+                    <label for="pepperoni">
+                        <input id="pepperoni" type="checkbox" name="topping" value="pepperoni">
+                            Pepperoni
+                    </label><br>
+                    <label for="ham">
+                        <input id="ham" type="checkbox" name="topping" value="ham">
+                            Ham
+                    </label><br>
+                    <label for="beef">
+                        <input id="beef" type="checkbox" name="topping" value="beef">
+                            Beef
+                    </label><br>
+                    <label for="anchovies">
+                        <input id="anchovies" type="checkbox" name="topping" value="anchovies">
+                            Anchovies
+                    </label><br>
+                    <label for="none">
+                        <input id="none" type="checkbox" name="topping" value="none">
+                            No Toppings
+                    </label>
             </fieldset>
-            <fieldset>
+            <fieldset id="selection_6">
                 <legend><h2>Additional Comments</h2></legend>
-                <textarea rows="7" cols="60" name="comments" placeholder="Any additional comments here"></textarea>
+                <textarea rows="7" cols="40" name="comments" placeholder="Any additional comments here"></textarea>
             </fieldset>
             <button>Place Your Delicious Order</button>
         </form>
     </main>
+    <footer><p><em>All pizzas are guaranteed delicious!!</em></p>
+    </footer>
 
 </body>
 </html>
