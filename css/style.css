@@ -1,0 +1,68 @@
+#top {
+    text-align: center;
+}
+
+h1 {
+    text-decoration: underline;
+    color: #40826D
+}
+
+h3 {
+    text-decoration: underline;
+    color: #40826D
+}
+
+body {
+    background-image: url(../img/pattern.jpg);
+    background-repeat: repeat-y;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: square;
+}
+
+table {
+    width: 600px;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #999;
+    color: #FFF;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    height: 25px;
+}
+
+th {
+    height: 50px;
+    font-size: 1.25em;
+}
+
+a:link {
+    color:#00F;
+}
+
+a:visited {
+    color:#FFA500;
+}
+
+a:hover {
+    color:#000;
+}
+
+a:active {
+    color:#008800;
+}
+
+.center_header {
+    text-align: center;
+}
+
+.images {
+    margin-left:25%;
+
+}
