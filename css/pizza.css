@@ -1,0 +1,117 @@
+/*this is a stylesheet attached to pizzaorder.html*/
+
+body {
+    background-color: #008800;
+}
+
+h1 {
+    text-align: center;
+    font-size:3em;
+    border: 2px solid white;
+    border-radius: 30px;
+    background-color: #FFF;
+    color: #000;
+    margin: 1% 30% 1% 30%;
+
+
+}
+header {
+/*background-image: url(../img/pizzahuth.png);*/
+/*background-size: cover;*/
+/*padding-top: 30%;*/
+}
+
+
+#company_info {
+    text-align: center;
+    font-style: italic;
+
+}
+
+main {
+    background-image: url(../img/patterns.jpg);
+    background-size: 250%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+img {
+    float: right;
+}
+
+
+fieldset {
+    border-color: #FF0000;
+    background-color: #E0E0E0;
+}
+
+#selection_1 {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#selection_1>legend, #selection_1>label {
+    margin-left: 10%;
+
+}
+
+#selection_2 {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#selection_2>legend, #selection_2>div {
+    margin-left: 10%;
+}
+
+#selection_3 {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#selection_3>label, #selection_3>legend, #selection_3>div {
+    margin-left: 10%;
+}
+
+#selection_4 {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#selection_4>select, #selection_4>legend, #selection_4>option {
+    margin-left: 10%;
+}
+
+#selection_5 {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#selection_5>label, #selection_5>p, #selection_5>legend {
+    margin-left: 10%;
+}
+
+#selection_6 {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#selection_6>legend, #selection_6>textarea {
+    margin-left: 10%;
+}
+
+button {
+    background-color: #008800;
+    color: #FFF;
+    border: 2px solid black;
+    font-size: 1em;
+    margin-left: 40%;
+    margin-bottom: 2.5%;
+    margin-top: 2.5%;
+}
+
+button:hover {
+    background-color: #006400;
+}
+
+
