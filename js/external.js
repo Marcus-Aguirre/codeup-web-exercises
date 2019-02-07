@@ -38,6 +38,33 @@ var amzn_total = a_hours * a_pay;
 var total_pay = parseInt(google_total) + parseInt(fbook_total) + parseInt(amzn_total);
 
 
-alert("Your total pay from all your jobs is $ " + total_pay + ", thats a lot of money!!!");
+alert("Your total pay from all your jobs is $ " + total_pay + ", that's a lot of money!!!");
+
+
+
+
+
+alert("So, it seems like you are trying to enroll in some college courses. Let me ask you some questions to verify that you can be enrolled.");
+var class_space = confirm("Is the class you are requesting have space? 'Ok' means yes.");
+var schedule_space = confirm("Do you currently have space for it in your personal class schedule? 'Ok' means yes.");
+
+var enrolled = class_space && schedule_space;
+
+if (enrolled) {
+    alert("You have been enrolled in the course. Thank you for your time.");
+
+} else {
+    alert("The class is either currently full or your schedule has no space. Try again at another time");
+}
+
+var number_of_items = prompt("How many items are you going to purchase?");
+var valid_offer = confirm("Is the offer currently valid");
+var premium_member = confirm("Are you a premium member of your fine establishment");
+
+
+var discount_applied = premium_member || parseInt(number_of_items) > 2 && valid_offer;
+
+alert("The discount application status is " + discount_applied);
+
 
 
