@@ -62,7 +62,7 @@ var valid_offer = confirm("Is the offer currently valid");
 var premium_member = confirm("Are you a premium member of your fine establishment");
 
 
-var discount_applied = premium_member || parseInt(number_of_items) > 2 && valid_offer;
+var discount_applied = premium_member || Number(number_of_items) > 2 && valid_offer;
 
 alert("The discount application status is " + discount_applied);
 
