@@ -277,7 +277,7 @@ alert("Your new price after your discount: $" + calculateTotal(1,100));
 
 
 
-Generate a random number between 0 and 6
+// Generate a random number between 0 and 6
 var luckyNumber = Math.floor(Math.random() * 6);
 alert("Your Lucky Number is: " + luckyNumber);
 
@@ -339,6 +339,10 @@ calculateTotal(luckyNumber, 100);
 // var color = prompt("What color is the traffic light?");
 //
 // alert(streetLightProcedures(color));
+
+
+
+
 
 
 
