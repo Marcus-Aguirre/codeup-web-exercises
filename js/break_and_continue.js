@@ -1,12 +1,14 @@
 "use strict";
 
-do{
-    var user_num = prompt("Choose a number between 1 and 50.");
-}while(user_num > 50 || user_num < 1 || isNaN(user_num));
+
 
 
 
 function oddNumbers (input) {
+
+    do{
+        var user_num = prompt("Choose a number between 1 and 50.");
+    }while(user_num > 50 || user_num < 1 || isNaN(user_num));
 
     for (var i = 1; i <= 50; i++) {
         if (i % 2 === 0) {
