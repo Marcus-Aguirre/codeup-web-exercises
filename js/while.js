@@ -1,12 +1,12 @@
 "use strict";
 
-var i = 0;
-var x = 1;
-
-while(i < 16){
-    i++;
-    console.log(x *= 2);
-}
+// var i = 0;
+// var x = 1;
+//
+// while(i < 16){
+//     i++;
+//     console.log(x *= 2);
+// }
 
 ////////////////////////////////
 
