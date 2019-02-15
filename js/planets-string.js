@@ -28,7 +28,88 @@
      */
 
 
-    console.log(planetsArray.join(" <br> "));
+    console.log(planetsArray.join("<br>"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Write a function that returns the sum of an array of numbers
+
+    function arrayAdd(in1, in2){
+        return in1.reduce(array_1[0], array_1.[array_1.length - 1]) + in2.reduce(array_2[0], array_2.[array_2.length - 1]);
+    }
+
+
+    var array_1 = [1, 5, 9, 2, 4, 19, 3, 12, 7];
+
+    var array_2 = [5, 2, 6, 2, 5, 13, 1, 17];
+
+    console.log(arrayAdd(array_1, array_2));
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Create a student roster management app. Using the user dialogue functions (alert, confirm, prompt), create an application that will prompt the user to choose from a menu with the following actions:
+    //     1) add a student
+    //     2) delete a student
+    //     3) view all students in alphabetical order
+    //     4) view all students in reverse alphabetical
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
