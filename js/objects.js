@@ -37,11 +37,14 @@
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
 
-    person.sayHello = "Hello from " + person.firstName + " " + person.lastName + ".";
+    person.sayHello = function(){
+        return "Hello from " + person.firstName + " " + person.lastName + "."
+    };
 
 
 
-    console.log(person.sayHello);
+    console.log(person.sayHello());
+    console.log("\n");
 
 
 
@@ -67,7 +70,10 @@
     var shoppers = [
         {name: 'Cameron', amount: 180},
         {name: 'Ryan', amount: 250},
-        {name: 'George', amount: 320}
+        {name: 'George', amount: 320},
+        {name: 'Pluto', amount: 400},
+        {name: 'Mickey', amount: 140}
+
     ];
 
 
@@ -75,16 +81,19 @@
         if (element.amount > 200){
             var customerAndDiscount = " ";
             var priceOff = element.amount * .12;
-            customerAndDiscount += element.name + " Old Price: $" + element.amount + ", Discounted Price: $" + (element.amount - priceOff);
+            customerAndDiscount += element.name + ": Original Price: $" + element.amount + ", Discounted 12% Price: $" + (element.amount - priceOff);
             console.log(customerAndDiscount);
+            console.log("\n");
+        } else {
+            console.log(element.name + ": Original Price: $" + element.amount + ", No Discount, Final Price: $" + element.amount);
+            console.log("\n");
         }
 
     });
 
 
-    console.log("------------");
-    console.log("------------");
-    console.log("------------");
+    console.log("\n");
+
 
 
 
@@ -104,8 +113,8 @@
     var books = [
         {title: "The Indigo Soul", author: {firstName: "Dude", lastName: "Fieri"}},
         {title: "The Burning Eyes of Yesterdays Tomorrow", author: {firstName: "Deeli", lastName: "Delores"}},
-        {title: "Infinity's Eventuality", author: {firstName: "Aramini", lastName: "Araminichi"}},
-        {title: "Cool-Ade Dude", author: {firstName: "Gordon", lastName: "Santo-Loco"}},
+        {title: "Infinity's Eventuality", author: {firstName: "Arayamini", lastName: "Arayaminichi"}},
+        {title: "Cool-Ade Dude", author: {firstName: "Gordo", lastName: "Santo-Loco"}},
         {title: "The Purple Soul: Shades of Indigo", author: {firstName: "Dude", lastName: "Fieri"}}
     ];
 
@@ -136,7 +145,7 @@
      */
 
 
-    books.forEach(function(element, index, array){
+    books.forEach(function(element, index){
         console.log("Book # " + (index + 1));
         console.log("Title: " + element.title);
         console.log("Author: " + element.author.firstName + " " + element.author.lastName);
@@ -164,6 +173,46 @@
 
 
 
+    var books = [
+        {title: "The Indigo Soul", author: {firstName: "Dude", lastName: "Fieri"}},
+        {title: "The Burning Eyes of Yesterdays Tomorrow", author: {firstName: "Deeli", lastName: "Delores"}},
+        {title: "Infinity's Eventuality", author: {firstName: "Aramini", lastName: "Araminichi"}},
+        {title: "Cool-Ade Dude", author: {firstName: "Gordon", lastName: "Santo-Loco"}},
+        {title: "The Purple Soul: Shades of Indigo", author: {firstName: "Dude", lastName: "Fieri"}}
+    ];
+
+
+
+
+function createBook(inTitle, inAuthorFirst, inAuthorLast){
+    books.push({title: inTitle, author: {firstName: inAuthorFirst, lastName: inAuthorLast}});
+    };
+
+    createBook("Purple Sleet", "Jocohni", "Jaco");
+
+console.log(books);
+
+
+
+
+
+console.log(Object.keys(books[0].author));
+
+
+function showBookInfo(lastname){
+   for(var i = 0; i < books.length; i++) {
+       if (lastname.toLowerCase() === books[i].author.lastName.toLowerCase()) {
+           console.log("Book # " + (i + 1));
+           console.log("Title: " + books[i].title);
+           console.log("Author: " + books[i].author.firstName + " " + books[i].author.lastName);
+           console.log("--------------------------");
+       }
+   }
+
+}
+
+var userRequest = prompt("Are you looking for a certain book? Please enter the last name of the author and we will search our database.");
+showBookInfo(userRequest);
 
 
 
@@ -178,12 +227,4 @@
 
 
 
-
-
-
-
-
-
-
-
-// })();
+})();
