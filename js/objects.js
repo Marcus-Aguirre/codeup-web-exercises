@@ -196,24 +196,24 @@ console.log(books);
 
 
 
-console.log(Object.keys(books[0].author));
-
-
-function showBookInfo(lastname){
-   for(var i = 0; i < books.length; i++) {
-       if (lastname.toLowerCase() === books[i].author.lastName.toLowerCase()) {
-           console.log("Book # " + (i + 1));
-           console.log("Title: " + books[i].title);
-           console.log("Author: " + books[i].author.firstName + " " + books[i].author.lastName);
-           console.log("--------------------------");
-       }
-   }
-
-}
-
-var userRequest = prompt("Are you looking for a certain book? Please enter the last name of the author and we will search our database.");
-showBookInfo(userRequest);
-
+// console.log(Object.keys(books[0].author));
+//
+//
+// function showBookInfo(lastname){
+//    for(var i = 0; i < books.length; i++) {
+//        if (lastname.toLowerCase() === books[i].author.lastName.toLowerCase()) {
+//            console.log("Book # " + (i + 1));
+//            console.log("Title: " + books[i].title);
+//            console.log("Author: " + books[i].author.firstName + " " + books[i].author.lastName);
+//            console.log("--------------------------");
+//        }
+//    }
+//
+// }
+//
+// var userRequest = prompt("Are you looking for a certain book? Please enter the last name of the author and we will search our database.");
+// showBookInfo(userRequest);
+//
 
 
 
