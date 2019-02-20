@@ -28,6 +28,7 @@
 <button id="btn_two" type="submit">Button 2</button>
 <button id="btn_three" type="submit">Button 3</button>
 <button id="btn_four" type="submit">Button 4</button>
+<button id="btn_five" type="submit">Clear All Listeners</button>
 
 <script>
 
@@ -91,6 +92,20 @@
         subParagraphs[0].innerText = "Mission Accomplished";
     };
     btn4.addEventListener("click", subParagraphChange, false);
+
+
+
+
+    //////// BUTTON 5 - CLEAR ALL EVENT LISTENERS /////////
+    var btn5 = document.getElementById("btn_five");
+
+    var removeEventListeners = function(e){
+        btn1.removeEventListener("click", headerChange, false);
+        btn2.removeEventListener("click", subHeaderChange, false);
+        btn3.removeEventListener("click", listItemsChange, false);
+        btn4.removeEventListener("click", subParagraphChange, false);
+    };
+    btn5.addEventListener("click", removeEventListeners, false);
 
 
 
