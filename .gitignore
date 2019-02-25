@@ -1,5 +1,10 @@
 .idea/*
 *.iml
+**keys.js
+
+
+studyGuide.html
+studyGuide.js
 secret.txt
 bbc-404.html
 Bootstrap_grid_layout.html
