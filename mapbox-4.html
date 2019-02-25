@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MapBox4</title>
+
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet'/>
+    <script src="js/geocoding.js"></script>
+</head>
+<body>
+
+
+
+<div id='map' style='width: 100%; height: 400px;'></div>
+
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+<script src = "js/keys.js"></script>
+<script>
+    mapboxgl.accessToken = mapKey;
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/satellite-streets-v9',
+        zoom: 9,
+        center: [-98.4896, 29.4266]
+    });
+
+
+
+    var delayer = 3000;
+
+    var timeoutId1 = setTimeout(function () {
+        console.log("Shifting Map to Zion")
+
+        geocode("Zion National Park, Utah", mapKey).then(function(data){
+            map.setCenter(data);
+        });
+
+    }, delayer);
+
+
+
+
+
+    var delay = 8000;
+
+    var timeoutId2 = setTimeout(function () {
+        console.log("Shifting Map to Honolulu")
+
+        reverseGeocode({lng: -157.8583, lat: 21.3069}, mapKey).then(function(data){
+            geocode(data, mapKey).then(function(deepData){
+                map.setCenter(deepData);
+            });
+        });
+
+    }, delay);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
