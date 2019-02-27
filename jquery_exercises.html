@@ -6,9 +6,12 @@
 </head>
 <body>
 
-<h1>jQuery Exercise</h1>
+<h1 id="h1">jQuery Exercise</h1>
 
 <p>This is the top of the Page</p>
+<p>This is the still the top of the Page</p>
+<p>Even now, this is still the top of the Page</p>
+
 
 <ul id="firstList" class="lists">
     <li>Item 1</li>
@@ -32,7 +35,7 @@
 </ul>
 
 
-<div>This is towards the middle of the Page</div>
+<div>This is the bottom of the Page</div>
 
 
 
@@ -49,19 +52,69 @@
 <script>
     $(document).ready(function() {
 
-        $('#firstList').css('background-color', '#Fb0');
-        $(".thirdList").css("background-color", "#1b0");
+        "use strict";
 
-        $(".lists").css("border", "2px Solid black");
 
-        $("*").css("font-size", "20px");
 
-        var h1 = $('h1').html();
-        alert(h1);
+        ///// changing background color of h1 when clicked //////
+
+        $("#h1").click(function() {
+            $('#h1').css("background-color", "lightblue");
+        });
+
+
+
+
+        ////// changing font size of all paragraghs when double clicked /////
+
+        $("p").dblclick(function(){
+           $("p").css("font-size", "21px");
+        });
+
+
+        /////// changing the text color to red of all li's //////////
+
+        $("li").hover(
+          function(){
+              $(this).css("background-color", "orangered");
+          },
+          function(){
+              $(this).css("background-color", "transparent");
+          }
+        );
+
+
+
+
+
+
+
+
+
+
+        ///////// purely only bonus work that is not required /////////
+
+        $("div").dblclick(function(){
+
+            $("div").css("background-color", "black").css("color", "white");
+
+            setTimeout(function(){
+                $("div").css("background-color", "transparent").css("color", "black");
+            }, 5000);
+        });
+
+
+
+
+
+
+
+
+
+
 
 
     });
-
 </script>
 
 
