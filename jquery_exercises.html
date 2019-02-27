@@ -6,7 +6,38 @@
 </head>
 <body>
 
-<h2>jQuery Exercise</h2>
+<h1>jQuery Exercise</h1>
+
+<p>This is the top of the Page</p>
+
+<ul id="firstList" class="lists">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+</ul>
+
+<ul id="secondList" class="lists">
+    <li>Item 5</li>
+    <li>Item 6</li>
+    <li>Item 7</li>
+    <li>Item 8</li>
+</ul>
+
+<ul class="thirdList lists">
+    <li>Item 12</li>
+    <li>Item 11</li>
+    <li>Item 10</li>
+    <li>Item 9</li>
+</ul>
+
+
+<div>This is towards the middle of the Page</div>
+
+
+
+
+
 
 
 
@@ -18,7 +49,16 @@
 <script>
     $(document).ready(function() {
 
-    console.log("The document has now finished loading.");
+        $('#firstList').css('background-color', '#Fb0');
+        $(".thirdList").css("background-color", "#1b0");
+
+        $(".lists").css("border", "2px Solid black");
+
+        $("*").css("font-size", "20px");
+
+        var h1 = $('h1').html();
+        alert(h1);
+
 
     });
 
