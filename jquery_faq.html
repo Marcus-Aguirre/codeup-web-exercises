@@ -14,7 +14,7 @@
 <div>Do You want to know about National Park Facts?</div>
 <button id="btn1">YES PLEASE</button>
 
-<dl id="FAQ" class="hidden">
+<dl id="FAQ">
 
     <dt>Zion Factoid #1</dt>
     <dd>In Switzerland it is illegal to own just one guinea pig.</dd><br>
@@ -45,7 +45,7 @@
 <script>
 
     $("#btn1").click(function() {
-            $('#FAQ').toggleClass('hidden');
+            $('dd').toggleClass('hidden');
         });
 
 
