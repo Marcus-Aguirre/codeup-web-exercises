@@ -59,7 +59,12 @@
         ///// changing background color of h1 when clicked //////
 
         $("#h1").click(function() {
-            $('#h1').css("background-color", "lightblue");
+            $("#h1").css("background-color", "lightblue");
+
+            setTimeout(function(){
+                $("#h1").css("background-color", "transparent");
+
+            }, 3000);
         });
 
 
@@ -76,10 +81,10 @@
 
         $("li").hover(
           function(){
-              $(this).css("background-color", "orangered");
+              $(this).css("color", "orangered");
           },
           function(){
-              $(this).css("background-color", "transparent");
+              $(this).css("color", "black");
           }
         );
 
@@ -100,7 +105,7 @@
 
             setTimeout(function(){
                 $("div").css("background-color", "transparent").css("color", "black");
-            }, 5000);
+            }, 3000);
         });
 
 
