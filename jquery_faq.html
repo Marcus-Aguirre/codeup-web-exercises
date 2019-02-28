@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    .hidden{
+        visibility: hidden;
+    }
+</style>
+
+<div>Do You want to know about National Park Facts?</div>
+<button id="btn1">YES PLEASE</button>
+
+<dl id="FAQ" class="hidden">
+
+    <dt>Zion Factoid #1</dt>
+    <dd>In Switzerland it is illegal to own just one guinea pig.</dd><br>
+    <dt>Zion Factoid #2</dt>
+    <dd>Snakes can predict earthquakes from up to 75 miles away, and 5 days before it happens.</dd><br>
+    <dt>Zion Factoid #3</dt>
+    <dd>7% of American adults believe that chocolate milk comes from brown cows.</dd><br>
+    <dt>Zion Factoid #4</dt>
+    <dd>Movie trailers originally were shown after a movie, which is why there called "trailers".</dd><br>
+    <dt>Zion Factoid #5</dt>
+    <dd>A lion's roar can be heard from 5 miles away.</dd><br>
+    <dt>Zion Factoid #6</dt>
+    <dd>The average male gets bored of a shopping trip after 26 minutes.</dd><br>
+    <dt>Zion Factoid #7</dt>
+    <dd>Aprox. 15% of all U.S. power outages are caused by squirrels.</dd><br>
+    <dt>Zion Factoid #8</dt>
+    <dd>The only known time in history it snowed in the Sahara desert was 18 Feb. 1979 for 30 minutes.</dd><br>
+    <dt>Zion Factoid #9</dt>
+    <dd>Captive pandas sometimes fake pregnancies.</dd><br>
+    <dt>Zion Factoid #10</dt>
+    <dd>Squirrels forget where they hide about 50% of their nuts.</dd><br>
+
+
+</dl>
+<script src="http://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+<script>
+
+    $("#btn1").click(function() {
+            $('#FAQ').toggleClass('hidden');
+        });
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
