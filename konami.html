@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konami Code</title>
+</head>
+<body>
+<h1 id="message">Konami Code</h1>
+
+
+<div id="image"></div>
+
+<script src="http://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+<script>
+    "use strict";
+
+    var konamiCode = "";
+
+    $(document).keyup(function(event){
+        console.log(event.keyCode);
+        konamiCode += event.keyCode;
+        setTimeout(function(){
+            konamiCode = "";
+        }, 4000);
+
+        if (konamiCode === "3838404037393739666513"){
+
+
+            $("body").css("background-color", "black");
+            $("body").css("color", "white");
+
+            setTimeout(function(){
+                $("body").css("background-color", "white");
+                $("body").css("color", "black");
+                $("#image").html("<img width='150px' height='100px' id='theImg' src='https://media.giphy.com/media/rT5vvlE6xFHIA/giphy.gif'/>");
+
+
+            }, 500);
+
+            setTimeout(function(){
+                $("body").css("background-color", "black");
+                $("body").css("color", "white").css("font-size", "2em");
+                $("#message").html("YOU DID IT!!!!")
+
+            }, 1000);
+
+            setTimeout(function(){
+                $("body").css("background-color", "white");
+                $("body").css("color", "black");
+
+            }, 1500);
+
+            setTimeout(function(){
+                $("body").css("background-color", "red");
+
+            }, 2000);
+
+            setTimeout(function(){
+                $("body").css("background-color", "black");
+                $("body").css("color", "white");
+
+            }, 2500);
+
+            setTimeout(function(){
+                $("body").css("background-color", "white");
+                $("body").css("color", "black");
+
+            }, 3000);
+
+            setTimeout(function(){
+                $("body").css("background-color", "blue");
+
+            }, 3500);
+
+            setTimeout(function(){
+                $("body").css("background-color", "black");
+                $("body").css("color", "white");
+                $("#message").html("YOU GET 30 LIVES!!!!")
+
+            }, 4000);
+
+            setTimeout(function(){
+                $("body").css("background-color", "white");
+                $("body").css("color", "black");
+
+            }, 4500);
+
+            setTimeout(function(){
+                $("body").css("background-color", "orange");
+
+            }, 5000);
+
+            setTimeout(function(){
+                $("body").css("background-color", "black");
+                $("body").css("color", "white");
+
+            }, 5500);
+
+            setTimeout(function(){
+                $("body").css("background-color", "white");
+                $("body").css("color", "black");
+
+            }, 6000);
+
+            setTimeout(function(){
+                $("body").css("background-color", "green");
+                $("body").css("color", "black");
+                $("#message").html("DONT LOOK TOO CLOSE!!!!")
+
+            }, 6500);
+
+            setTimeout(function(){
+                $("body").css("background-color", "black");
+                $("body").css("color", "white");
+
+            }, 7000);
+
+            setTimeout(function(){
+                $("body").css("background-color", "white");
+                $("body").css("color", "black");
+                $("#image").html("<img width='290px' height='250px' id='theImg' src='https://media.giphy.com/media/DpXqHdILXRRDi/giphy.gif'/>");
+
+            }, 7500);
+
+            setTimeout(function(){
+                $("body").css("background-color", "red");
+
+            }, 8000);
+
+            setTimeout(function(){
+                $("body").css("background-color", "black");
+                $("body").css("color", "white");
+
+
+            }, 8500);
+
+            setTimeout(function(){
+                $("body").css("background-color", "white");
+                $("body").css("color", "black");
+
+            }, 9000);
+
+            setTimeout(function(){
+                $("body").css("background-color", "blue");
+                $("#message").html("ITS NOT GOOD FOR YOUR HEALTH!!!!")
+
+            }, 9500);
+
+            setTimeout(function(){
+                $("body").css("background-color", "black");
+                $("body").css("color", "white");
+
+            }, 10000);
+
+            setTimeout(function(){
+                $("body").css("background-color", "white");
+                $("body").css("color", "black");
+
+            }, 10500);
+
+            setTimeout(function(){
+                $("body").css("background-color", "orange");
+
+            }, 11000);
+
+            setTimeout(function(){
+                $("body").css("background-color", "black");
+                $("body").css("color", "white");
+
+            }, 11500);
+
+            setTimeout(function(){
+                $("body").css("background-color", "white");
+                $("body").css("color", "black");
+
+            }, 12000);
+
+            setTimeout(function(){
+                $("body").css("background-color", "white");
+                $("body").css("color", "black");
+
+
+            }, 12500);
+
+            setTimeout(function(){
+                $("body").css("background-color", "black");
+                $("body").css("color", "white");
+                $("#message").html("REALLY .... LOOK AWAY")
+
+            }, 13000);
+
+            setTimeout(function(){
+                $("body").css("background-color", "white");
+                $("body").css("color", "black");
+
+            }, 13500);
+
+            setTimeout(function(){
+                $("body").css("background-color", "red");
+
+            }, 14000);
+
+            setTimeout(function(){
+                $("body").css("background-color", "black");
+                $("body").css("color", "white");
+
+            }, 14500);
+
+            setTimeout(function(){
+                $("body").css("background-color", "white");
+                $("body").css("color", "black");
+
+            }, 15000);
+
+            setTimeout(function(){
+                $("body").css("background-color", "blue");
+
+            }, 15500);
+
+            setTimeout(function(){
+                $("body").css("background-color", "black");
+                $("body").css("color", "white");
+
+
+            }, 16000);
+
+            setTimeout(function(){
+                $("body").css("background-color", "white");
+                $("body").css("color", "black");
+                $("#message").html("SIT TIGHT")
+
+            }, 16500);
+
+            setTimeout(function(){
+                $("body").css("background-color", "orange");
+                $("#image").html("<img width='135px' height='150px' id='theImg' src='https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif'/>");
+
+            }, 17000);
+
+            setTimeout(function(){
+                $("body").css("background-color", "black");
+                $("body").css("color", "white");
+
+
+            }, 17500);
+
+            setTimeout(function(){
+                $("body").css("background-color", "white");
+                $("body").css("color", "black");
+
+            }, 18000);
+
+            setTimeout(function(){
+                $("body").css("background-color", "green");
+                $("body").css("color", "black");
+                $("#message").html("THIS")
+
+
+            }, 18500);
+
+            setTimeout(function(){
+                $("body").css("background-color", "black");
+                $("body").css("color", "white");
+
+
+            }, 19000);
+
+            setTimeout(function(){
+                $("body").css("background-color", "white");
+                $("body").css("color", "black");
+
+            }, 19500);
+
+            setTimeout(function(){
+                $("body").css("background-color", "red");
+
+            }, 20000);
+
+            setTimeout(function(){
+                $("body").css("background-color", "black");
+                $("body").css("color", "white");
+                $("#message").html("IS JUST")
+
+            }, 20500);
+
+            setTimeout(function(){
+                $("body").css("background-color", "white");
+                $("body").css("color", "black");
+
+            }, 21000);
+
+            setTimeout(function(){
+                $("body").css("background-color", "blue");
+
+            }, 21500);
+
+            setTimeout(function(){
+                $("body").css("background-color", "black");
+                $("body").css("color", "white");
+
+            }, 22000);
+
+            setTimeout(function(){
+                $("body").css("background-color", "white");
+                $("body").css("color", "black");
+                $("#message").html("THE")
+
+            }, 22500);
+
+            setTimeout(function(){
+                $("body").css("background-color", "orange");
+
+            }, 23000);
+
+            setTimeout(function(){
+                $("body").css("background-color", "black");
+                $("body").css("color", "white");
+
+            }, 23500);
+
+            setTimeout(function(){
+                $("body").css("background-color", "white");
+                $("body").css("color", "black");
+                $("#message").html("Konami Code").css("font-size", "100%");
+                $("#image").html("");
+
+            }, 24000);
+
+
+            setTimeout(function(){
+                $(location).attr('href', 'https://www.youtube.com/watch?v=2mWZlNOzdv8')
+            }, 28000);
+
+
+
+
+        }
+    });
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
