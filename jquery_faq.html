@@ -37,8 +37,43 @@
     <dt>Zion Factoid #10</dt>
     <dd>Squirrels forget where they hide about 50% of their nuts.</dd><br>
 
-
 </dl>
+
+
+    <ul>
+    <h3>Walt Disney Park</h3>
+        <li>Mickey</li>
+        <li>Goofy</li>
+        <li>Pluto</li>
+        <li>Other Character</li>
+    </ul>
+
+    <ul>
+    <h3>Marvel Park</h3>
+        <li>Iron Man</li>
+        <li>Cpt. America</li>
+        <li>Thor</li>
+        <li>Hulk</li>
+    </ul>
+
+    <ul>
+    <h3>DCEU Park</h3>
+        <li>Batman</li>
+        <li>Superman</li>
+        <li>FLash</li>
+        <li>Green Lanter</li>
+    </ul>
+
+<button id="yellowBG">Last Yellow</button>
+
+
+
+
+
+
+
+
+
 <script src="http://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
@@ -47,6 +82,33 @@
     $("#btn1").click(function() {
             $('dd').toggleClass('hidden');
         });
+
+
+    $("#yellowBG").click(function(){
+
+        $("ul").each(function(index, element){
+
+            $(element).children().last().css("background-color", "yellow");
+
+        })
+
+    });
+
+
+    $("h3").click(function(){
+
+        $(this).parent().css("font-weight", "bold");
+
+    });
+
+
+
+    $("li").click(function(){
+
+        $(this).parent().children().first().next().css("background-color", "green");
+
+    });
+
 
 
 
