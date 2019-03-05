@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <style>
+        body{
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+        h1{
+
+            margin-top: 25px;
+            text-align: center;
+        }
+        h3{
+            text-align: center;
+        }
+        .left{
+            text-align: left;
+            transition-property: transform;
+            transition-duration: 3s;
+        }
+    </style>
+
+</head>
+<body>
+<h1 style="text-align: center">AJAX BLOG</h1>
+
+<button id="refresh">REFRESH</button>
+
+<div id="posts">
+
+</div>
+
+
+
+
+<script src="http://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+</script>
+
+
+<script>
+
+    var url = "data/blog.json";
+
+    function addContent() {
+
+        $.ajax(url).done(function (data) {
+
+            var blogData = "";
+
+            for (var i = 0; i < data.length; i++) {
+                blogData += "<h1>" + data[i].title + "</h1>" +
+                    "<div>" +
+                    "<h3>" + data[i].date + "</h3>" +
+                    "<h4>" + "Genre: " + data[i].categories + "</h4>" +
+                    "<p>" + data[i].content + "</p>" +
+                    "</div>";
+
+
+                $("#posts").html(blogData);
+            }
+        })
+    }
+
+
+
+    $("#refresh").click(function(){
+
+        addContent();
+
+        setTimeout(function(){
+
+        $("h1").click(function(){
+            $(this).toggleClass("left");
+
+            $(this).next().toggle(1000);
+
+            })
+
+        }, 500);
+
+
+    });
+
+
+
+
+    ////////// append style ////////////
+
+    // $('#insertProducts').append('<tr>' +
+    //     '<td>' + element.title +
+    //     '<td>' + element.quantity +
+    //     '<td>' + element.categories +
+    //     '<td>' + element.price);
+
+
+
+</script>
+
+
+</body>
+</html>
