@@ -1,6 +1,8 @@
 "use strict";
 
-const niceMessage = require("./say-hello.js");
+import math from "./say-hello.js";
 
-console.log(niceMessage("marcus"));
+// const niceMessage = require("./say-hello.js");
+
+console.log(math.sayHello("marcus"));
 
