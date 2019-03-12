@@ -83,13 +83,17 @@ console.log(emailList);
 
 
 // ////// reduce to total years of experience ////
-const averageExp = users.reduce((total, currentValue) => {
+const averageExp = users.reduce((total, user) => {
 
-    return (total + currentValue.yearsOfExperience) / users.length;
+    total += user.yearsOfExperience;
+
+    return total;
 
 }, 0);
 
-console.log(`The average experience is: ${averageExp.toFixed(2)} years.`);
+const average = averageExp / users.length;
+
+console.log(`The average experience is: ${average} years.`);
 
 
 
