@@ -1,6 +1,6 @@
 "use strict";
 
-///////////////////// MAP ////
+/////////////////// MAP ////
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -68,7 +68,7 @@ const users = [
     }
 ];
 
-////// 3 languages or more ////
+// ////// 3 languages or more ////
 const trilingualUsers = users.filter(n => n.languages.length >= 3);
 
 console.log(trilingualUsers);
@@ -82,7 +82,7 @@ console.log(emailList);
 
 
 
-////// reduce to total years of experience ////
+// ////// reduce to total years of experience ////
 const averageExp = users.reduce((total, currentValue) => {
 
     return (total + currentValue.yearsOfExperience) / users.length;
@@ -94,7 +94,7 @@ console.log(`The average experience is: ${averageExp.toFixed(2)} years.`);
 
 
 
-////// reduce to longest email  //////
+// ////// reduce to longest email  //////
 const longestEmail = users.reduce((longest, currentEmail) => {
 
     if(currentEmail.email.length > longest.length){
@@ -112,13 +112,45 @@ console.log(`The longest email is: ${longestEmail}`);
 
 
 
-////// reduce to all instructors first name  //////
+
+// ////// reduce to all instructors first name  //////
 const firstNames = users.reduce((allNames, currentName) => {
 
     allNames += currentName.name + " ";
 
     return allNames;
 
-},"");
+},"The instructors are: ");
 
-console.log(`Your instructors are: ${firstNames}`);
+console.log(firstNames);
+
+
+
+
+//////// return a unique list of languages //////
+const uniqueLanguages = users.reduce(function(person, currentLang){
+
+    person += currentLang.languages + ",";
+
+    let languages = person.split(',');
+
+    for (let i = 0; i < languages.length; i++){
+
+        for(let x = 1; i < languages.length; i++){
+
+            if(languages[i] === languages [x]){
+
+                languages.splice(x,1);
+
+            }
+        }
+    }
+
+    return languages;
+
+}, []);
+
+console.log(uniqueLanguages);
+
+
+
