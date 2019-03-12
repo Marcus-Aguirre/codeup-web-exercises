@@ -132,29 +132,49 @@ console.log(firstNames);
 
 
 //////// return a unique list of languages //////
-const uniqueLanguages = users.reduce(function(person, currentLang){
 
-    person += currentLang.languages + ",";
+// const uniqueLanguages = users.reduce(function(person, currentLang){
+//
+//     person += currentLang.languages + ",";
+//
+//     let languages = person.split(',');
+//
+//     for (let i = 0; i < languages.length; i++){
+//
+//         for(let x = 1; i < languages.length; i++){
+//
+//             if(languages[i] === languages [x]){
+//
+//                 languages.splice(x,1);
+//
+//             }
+//         }
+//     }
+//
+//     return languages;
+//
+// }, []);
+//
+// console.log(uniqueLanguages);
+//
 
-    let languages = person.split(',');
 
-    for (let i = 0; i < languages.length; i++){
 
-        for(let x = 1; i < languages.length; i++){
 
-            if(languages[i] === languages [x]){
+const listOfLanguages = (list, user) => {
+    list.push(user.languages);
+    return list;
+};
 
-                languages.splice(x,1);
+let languages = users.reduce(listOfLanguages, []);
 
-            }
-        }
-    }
+languages = languages.flat();
 
-    return languages;
+languages = new Set(languages);
 
-}, []);
+languages = Array.from(languages);
 
-console.log(uniqueLanguages);
+console.log(languages);
 
 
 
