@@ -42,11 +42,17 @@
 function gitHubUserInfo (userName){
 
    fetch(`https://api.github.com/users/${userName}/events/public`, {headers: {"Authorization": `token ${gitHubKey}`}})
-       .then(data => console.log(data.json()))
+
+       .then(data => {
+
+         data.json().then(secondData => {
+
+               console.log(secondData);
+
+               console.log(`The last commit of ${userName} was on ${secondData[0].created_at}`);
+         });
+       })
        .catch(() => console.log("Failed"));
-
-
-
 }
 
 gitHubUserInfo("Marcus-Aguirre");
