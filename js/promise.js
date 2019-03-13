@@ -19,23 +19,23 @@
 // })
 
 
-// function wait (delay) {
-//
-//    return new Promise((resolve) => {
-//
-//     setTimeout(function(){
-//
-//         resolve();
-//
-//     }, delay)
-//
-//     });
-//
-// }
-//
-// wait(2000).then(() => console.log(`You'll see this message after 2 seconds.`));
-// wait(6000).then(() => console.log(`You'll see this message after 6 seconds.`));
-//
+function wait (delay) {
+
+   return new Promise((resolve) => {
+
+    setTimeout(function(){
+
+        resolve();
+
+    }, delay)
+
+    });
+
+}
+
+wait(2000).then(() => console.log(`You'll see this message after 2 seconds.`));
+wait(6000).then(() => console.log(`You'll see this message after 6 seconds.`));
+
 
 
 
