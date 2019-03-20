@@ -133,30 +133,30 @@ console.log(firstNames);
 
 //////// return a unique list of languages //////
 
-// const uniqueLanguages = users.reduce(function(person, currentLang){
-//
-//     person += currentLang.languages + ",";
-//
-//     let languages = person.split(',');
-//
-//     for (let i = 0; i < languages.length; i++){
-//
-//         for(let x = 1; i < languages.length; i++){
-//
-//             if(languages[i] === languages [x]){
-//
-//                 languages.splice(x,1);
-//
-//             }
-//         }
-//     }
-//
-//     return languages;
-//
-// }, []);
-//
-// console.log(uniqueLanguages);
-//
+const uniqueLanguages = users.reduce(function(person, currentLang){
+
+    person += currentLang.languages + ",";
+
+    let languages = person.split(',');
+
+    for (let i = 0; i < languages.length; i++){
+
+        for(let x = 1; x < languages.length; x++){
+
+            if(languages[i] === languages [x]){
+
+                languages.splice(x,1);
+
+            }
+        }
+    }
+
+    return languages;
+
+}, []);
+
+console.log(uniqueLanguages);
+
 
 
 
