@@ -11,6 +11,10 @@ function isEven(number) {
 }
 
 // IS MULTIPLE OF VAR
+function isMultiple(number, multNum){
+    return number % multNum === 0;
+}
+
 
 // MINUS VAR IS ODD
 
