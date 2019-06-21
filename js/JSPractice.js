@@ -17,6 +17,13 @@ function isMultiple(number, multNum){
 
 
 // MINUS VAR IS ODD
+function minusIsOdd(number, minusNum){
+    var newNum = number - minusNum;
+    return newNum % 2 === 1;
+}
+
 
 // MINUS VAR IS EVEN
+
+
 
