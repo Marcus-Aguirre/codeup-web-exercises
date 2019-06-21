@@ -22,8 +22,10 @@ function minusIsOdd(number, minusNum){
     return newNum % 2 === 1;
 }
 
-
 // MINUS VAR IS EVEN
-
+function minusIsEven(number, minusNum){
+    var newNum = number - minusNum;
+    return newNum % 2 === 0;
+}
 
 
