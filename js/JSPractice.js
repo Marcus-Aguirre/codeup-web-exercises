@@ -4,6 +4,7 @@
 function isOdd(number){
     return number % 2 === 1;
 }
+console.log("Test of isOdd, expected TRUE, FALSE, FALSE");
 console.log(isOdd(5)); //TRUE
 console.log(isOdd(16)); // FALSE
 console.log(isOdd(26)); // FALSE
@@ -14,6 +15,7 @@ console.log(isOdd(26)); // FALSE
 function isEven(number) {
     return number % 2 === 0;
 }
+console.log("\n\nTest of isEven, expected TRUE, FALSE, TRUE");
 console.log(isEven(6)); //TRUE
 console.log(isEven(15)); // FALSE
 console.log(isEven(24)); // TRUE
@@ -24,6 +26,7 @@ console.log(isEven(24)); // TRUE
 function isMultiple(number, multNum){
     return number % multNum === 0;
 }
+console.log("\n\nTest of isMultiple, expected TRUE, FALSE, TRUE");
 console.log(isMultiple(10, 2)); // TRUE
 console.log(isMultiple(15, 7)); // FALSE
 console.log(isMultiple(100, 5)); // TRUE
@@ -35,6 +38,7 @@ function minusIsOdd(number, minusNum){
     var newNum = number - minusNum;
     return newNum % 2 === 1;
 }
+console.log("\n\nTest of minusIsOdd, expected FALSE, TRUE, FALSE");
 console.log(minusIsOdd(10, 2)); // FALSE
 console.log(minusIsOdd(10, 3)); // TRUE
 console.log(minusIsOdd(100, 52)); // FALSE
@@ -46,6 +50,7 @@ function minusIsEven(number, minusNum){
     var newNum = number - minusNum;
     return newNum % 2 === 0;
 }
+console.log("\n\nTest of minusIsEven, expected TRUE, FALSE, TRUE");
 console.log(minusIsEven(10, 2)); // TRUE
 console.log(minusIsEven(10, 3)); // FALSE
 console.log(minusIsEven(100, 52)); // TRUE
